@@ -10,10 +10,10 @@
   const baseUrl = () => config.supabaseUrl.replace(/\/$/, "") + "/rest/v1/comments";
   const headers = () => ({ "apikey": config.supabasePublishableKey, "Content-Type": "application/json" });
   function home() {
-    document.title = "Fieldnotes — a small blog";
+    document.title = "ECON 108 for FW";
     app.replaceChildren();
     const hero = elt("section","hero");
-    hero.append(elt("div","eyebrow","A quiet corner of the internet"),elt("h1","","A few thoughts, gathered here."),elt("p","","Stories, images, little observations, and open conversations. No accounts. No noise."));
+    hero.append(elt("div","eyebrow","ECON 108 for FW"),elt("h1","","Writing and discussion"),elt("p","","Posts and conversations. Anyone can read and comment anonymously."));
     app.append(hero);
     const head = elt("div","section-heading"); head.append(elt("h2","","Recent writing"),elt("span","",`${posts.length} posts`)); app.append(head);
     const list = elt("section","post-list");
@@ -24,9 +24,9 @@
       list.append(a);
     });app.append(list);
   }
-  function showAbout(){document.title="About — Fieldnotes";app.replaceChildren();const s=elt("section","about");s.append(elt("div","eyebrow","About this space"),elt("h1","","Hello, internet."),elt("p","","Fieldnotes is a tiny public blog for writing, photographs, and conversations. Everybody can read. Anybody can comment. Names are replaced with randomly assigned animal species."),elt("p","","To personalize this paragraph, edit the showAbout function in app.js."));app.append(s)}
+  function showAbout(){document.title="About — ECON 108 for FW";app.replaceChildren();const s=elt("section","about");s.append(elt("div","eyebrow","About this space"),elt("h1","","About ECON 108 for FW"),elt("p","","A public blog for ECON 108 for FW. Anyone can read posts and leave comments without an account. Comments are identified by randomly assigned animal species."),elt("p","","New posts will appear on the homepage when published."));app.append(s)}
   function article(post) {
-    document.title = `${post.title} — Fieldnotes`;app.replaceChildren();
+    document.title = `${post.title} — ECON 108 for FW`;app.replaceChildren();
     const back=elt("a","back-link","← All writing");back.href="#";app.append(back);
     const article=elt("article","article");article.append(elt("div","meta",dateText(post.date)),elt("h1","",post.title),elt("p","intro",post.excerpt));
     const body=elt("div","article-body");
