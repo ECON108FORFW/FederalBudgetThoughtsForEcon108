@@ -24,7 +24,7 @@
       list.append(a);
     });app.append(list);
   }
-  function showAbout(){document.title="About — ECON 108 for FW";app.replaceChildren();const s=elt("section","about");s.append(elt("p","","Blog for ECON 108 class project."));app.append(s)}
+  function showAbout(){document.title="About — ECON 108 for FW";app.replaceChildren();const section=elt("section","about");section.textContent="Blog for ECON 108 class project.";app.append(section)}
   function article(post) {
     document.title = `${post.title} — ECON 108 for FW`;app.replaceChildren();
     const back=elt("a","back-link","← All writing");back.href="#";app.append(back);
