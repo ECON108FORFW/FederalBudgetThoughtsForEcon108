@@ -33,7 +33,7 @@
     for(const block of post.blocks){
       if(block.type==="paragraph")body.append(elt("p","",block.text));
       if(block.type==="heading")body.append(elt("h2","",block.text));
-      if(block.type==="pdf") {const frame=elt("iframe","pdf-document");frame.src=block.src;frame.title="Original PDF: "+post.title;frame.style.width="100%";frame.style.height="min(85vh,1000px)";frame.style.border="1px solid #e7e7e0";frame.setAttribute("loading","lazy");body.append(frame);const link=elt("a","back-link","Open original PDF");link.href=block.src;link.target="_blank";link.rel="noopener";body.append(link)}
+      if(block.type==="pdf-link") {const link=elt("a","back-link","Original PDF");link.href=block.src;link.target="_blank";link.rel="noopener";body.append(link)}
       if(block.type==="image") {const fig=elt("figure","article-figure");const image=elt("img");image.src=block.src;image.alt=block.alt||"";image.loading="lazy";fig.append(image);if(block.caption)fig.append(elt("figcaption","",block.caption));body.append(fig)}
     }article.append(body);
     const section=elt("section","comments");section.append(elt("h2","","Conversation"),elt("p","comments-subtitle","Leave a thought. A random animal will be your signature."));
