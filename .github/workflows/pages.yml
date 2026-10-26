@@ -40,10 +40,21 @@ jobs:
               Path("assets", filename).write_bytes(image["image"])
           PY
 
-      - name: Bundle NoSwearing dictionary
+      - name: Refresh NoSwearing dictionary (retain bundled fallback if unavailable)
+        continue-on-error: true
         run: |
           python -m pip install --quiet beautifulsoup4
           python scripts/build_noswearing_dictionary.py
+
+      - name: Validate bundled profanity dictionary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          words = json.loads(Path("assets/noswearing-words.json").read_text(encoding="utf-8"))
+          assert isinstance(words, list) and len(words) >= 100, "Profanity dictionary missing or empty"
+          print(f"Deploying {len(words)} profanity dictionary terms.")
+          PY
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
