@@ -52,3 +52,10 @@ html, body { max-width: 100%; overflow-x: clip; }
 .share-close { background: #e5e9e4; color: var(--ink); }
 .share-status { min-height: 1.4em; margin: 12px 0 0; font-size: 14px; }
 @media (max-width: 600px) { .share-dialog { padding: 18px; } .share-actions { flex-direction: column; } .share-actions button { width: 100%; } }
+
+
+/* Put article sharing on the author attribution line. */
+.byline-share-row { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:28px 0; }
+.byline-share-row .intro { margin:0; min-width:0; flex:1; }
+.byline-share-row .share-row { margin:0; flex-shrink:0; }
+@media (max-width:600px) { .byline-share-row { gap:12px; } .byline-share-row .share-trigger { padding:11px 14px; } }
