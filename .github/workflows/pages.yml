@@ -40,13 +40,10 @@ jobs:
               Path("assets", filename).write_bytes(image["image"])
           PY
 
-      - name: Bundle comment profanity list
+      - name: Bundle NoSwearing dictionary
         run: |
-          mkdir -p assets
-          curl --fail --location --silent --show-error --retry 3 \
-            "https://www.cs.cmu.edu/~biglou/resources/bad-words.txt" \
-            -o assets/bad-words.txt
-          test -s assets/bad-words.txt
+          python -m pip install --quiet beautifulsoup4
+          python scripts/build_noswearing_dictionary.py
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
