@@ -28,7 +28,8 @@
   function article(post) {
     document.title = `${post.title} — ECON 108 for FW`;app.replaceChildren();
     const back=elt("a","back-link","← All writing");back.href="#";app.append(back);
-    const article=elt("article","article");article.append(elt("div","meta",dateText(post.date)),elt("h1","",post.title),elt("p","intro",post.excerpt));
+    const article=elt("article","article");article.append(elt("div","meta",dateText(post.date)),elt("h1","",post.title));
+    const bylineRow=elt("div","byline-share-row");bylineRow.append(elt("p","intro",post.excerpt));
     const shareRow=elt("div","share-row");
     const shareButton=elt("button","share-trigger","↗ Share");
     shareButton.type="button";
@@ -42,7 +43,7 @@
     const shareStatus=elt("p","share-status");shareStatus.setAttribute("role","status");
     const actions=elt("div","share-actions");actions.append(copyButton,closeButton);
     shareDialog.append(dialogTitle,shareLink,actions,shareStatus);
-    shareRow.append(shareButton,shareDialog);article.append(shareRow);
+    shareRow.append(shareButton,shareDialog);bylineRow.append(shareRow);article.append(bylineRow);
     const directLink=()=>new URL("#post/"+encodeURIComponent(post.slug),location.href.split("#")[0]).href;
     shareButton.addEventListener("click",()=>{shareLink.value=directLink();shareStatus.textContent="";shareDialog.showModal();});
     closeButton.addEventListener("click",()=>shareDialog.close());
