@@ -41,7 +41,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "This chart was assembled using data from the US Government’s Federal Budget Explorer, which lets people view the budget in sections, with money totals for each."
+        "text": "This chart was assembled using data from the US Government’s Federal Budget Explorer, which lets people view the budget in sections, with money totals for each.",
+        "links": [
+          {
+            "text": "US Government’s Federal Budget Explorer",
+            "url": "https://www.usaspending.gov/explorer/budget_function"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -61,7 +67,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Source: Government Spending Explorer | USAspending"
+        "text": "Source: Government Spending Explorer | USAspending",
+        "links": [
+          {
+            "text": "Government Spending Explorer | USAspending",
+            "url": "https://www.usaspending.gov/explorer/budget_function"
+          }
+        ]
       },
       {
         "type": "heading",
@@ -73,7 +85,17 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Welfare benefits also vary by purpose and eligibility. A Brookings study found that adjusting for local living costs substantially narrowed differences in cash and food assistance across groups of states. A 2026 update again documented variation."
+        "text": "Welfare benefits also vary by purpose and eligibility. A Brookings study found that adjusting for local living costs substantially narrowed differences in cash and food assistance across groups of states. A 2026 update again documented variation.",
+        "links": [
+          {
+            "text": "Brookings study",
+            "url": "https://www.brookings.edu/articles/the-social-safety-net-looks-different-in-every-state"
+          },
+          {
+            "text": "2026 update",
+            "url": "https://www.brookings.edu/articles/a-look-at-safety-net-policy-over-time-and-across-states"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -85,7 +107,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Exploring the Congressional Budget Office’s Budget and Economic Outlook for 2026–2036, the research reports approximately $6.935 trillion in discretionary spending, $4.706 trillion in welfare-related spending, and $1.289 trillion in federal net interest expenses for FY2026."
+        "text": "Exploring the Congressional Budget Office’s Budget and Economic Outlook for 2026–2036, the research reports approximately $6.935 trillion in discretionary spending, $4.706 trillion in welfare-related spending, and $1.289 trillion in federal net interest expenses for FY2026.",
+        "links": [
+          {
+            "text": "Congressional Budget Office’s Budget and Economic Outlook for 2026–2036",
+            "url": "https://www.cbo.gov/publication/61882"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -118,7 +146,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "If the rate rose to 5.80%, the long-term average reported from FRED’s 10-Year Treasury Constant Maturity Rate data, annual interest expense would rise to $1.881 trillion—roughly $592 billion more."
+        "text": "If the rate rose to 5.80%, the long-term average reported from FRED’s 10-Year Treasury Constant Maturity Rate data, annual interest expense would rise to $1.881 trillion—roughly $592 billion more.",
+        "links": [
+          {
+            "text": "FRED’s 10-Year Treasury Constant Maturity Rate data",
+            "url": "https://fred.stlouisfed.org/series/DGS10"
+          }
+        ]
       },
       {
         "type": "paragraph",
