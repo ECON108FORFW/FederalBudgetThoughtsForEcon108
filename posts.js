@@ -70,7 +70,7 @@ window.BLOG_POSTS = [
         "text": "Source: Government Spending Explorer | USAspending",
         "links": [
           {
-            "text": "Government Spending Explorer | USAspending",
+            "text": "Source: Government Spending Explorer | USAspending",
             "url": "https://www.usaspending.gov/explorer/budget_function"
           }
         ]
@@ -88,11 +88,11 @@ window.BLOG_POSTS = [
         "text": "Welfare benefits also vary by purpose and eligibility. A Brookings study found that adjusting for local living costs substantially narrowed differences in cash and food assistance across groups of states. A 2026 update again documented variation.",
         "links": [
           {
-            "text": "Brookings study",
+            "text": "A Brookings study found that adjusting for local living costs substantially narrowed differences in cash and food assistance across groups of states.",
             "url": "https://www.brookings.edu/articles/the-social-safety-net-looks-different-in-every-state"
           },
           {
-            "text": "2026 update",
+            "text": "A 2026 update again documented variation.",
             "url": "https://www.brookings.edu/articles/a-look-at-safety-net-policy-over-time-and-across-states"
           }
         ]
@@ -110,7 +110,7 @@ window.BLOG_POSTS = [
         "text": "Exploring the Congressional Budget Office’s Budget and Economic Outlook for 2026–2036, the research reports approximately $6.935 trillion in discretionary spending, $4.706 trillion in welfare-related spending, and $1.289 trillion in federal net interest expenses for FY2026.",
         "links": [
           {
-            "text": "Congressional Budget Office’s Budget and Economic Outlook for 2026–2036",
+            "text": "Exploring the Congressional Budget Office’s Budget and Economic Outlook for 2026–2036, the research reports approximately $6.935 trillion in discretionary spending, $4.706 trillion in welfare-related spending, and $1.289 trillion in federal net interest expenses for FY2026.",
             "url": "https://www.cbo.gov/publication/61882"
           }
         ]
@@ -149,7 +149,7 @@ window.BLOG_POSTS = [
         "text": "If the rate rose to 5.80%, the long-term average reported from FRED’s 10-Year Treasury Constant Maturity Rate data, annual interest expense would rise to $1.881 trillion—roughly $592 billion more.",
         "links": [
           {
-            "text": "FRED’s 10-Year Treasury Constant Maturity Rate data",
+            "text": "If the rate rose to 5.80%, the long-term average reported from FRED’s 10-Year Treasury Constant Maturity Rate data, annual interest expense would rise to $1.881 trillion—roughly $592 billion more.",
             "url": "https://fred.stlouisfed.org/series/DGS10"
           }
         ]
