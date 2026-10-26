@@ -8,3 +8,33 @@ a{color:inherit} .site-shell{max-width:1020px;margin:auto;padding:0 32px}.site-h
 /* Consistent visible links inside article text */
 .article-body a:link, .article-body a:visited { color: #0057c2; text-decoration: underline; text-underline-offset: 2px; }
 .article-body a:hover, .article-body a:focus-visible { color: #003d91; }
+
+
+/* Mobile layout fixes for article reading and anonymous comments. */
+html, body { max-width: 100%; overflow-x: clip; }
+.site-shell, .article, .article-body, .comments, .comment-feed { min-width: 0; }
+.article-body { overflow-wrap: anywhere; }
+.article-figure img { max-width: 100%; height: auto; object-fit: contain; }
+.comment-form textarea { display: block; max-width: 100%; font-size: 16px; line-height: 1.5; }
+.comment-form button { min-height: 44px; touch-action: manipulation; }
+.comment p { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .site-shell { padding-inline: 16px; }
+  .site-header { height: auto; min-height: 76px; gap: 12px; padding-block: 15px; flex-wrap: wrap; }
+  .brand { min-width: 0; overflow-wrap: anywhere; font-size: clamp(19px, 5vw, 25px); letter-spacing: -0.04em; }
+  nav { flex-wrap: wrap; gap: 12px; }
+  nav a { min-height: 44px; display: inline-flex; align-items: center; }
+  .hero h1 { font-size: clamp(36px, 10vw, 52px); overflow-wrap: anywhere; }
+  .article h1 { font-size: clamp(32px, 9vw, 46px); overflow-wrap: anywhere; }
+  .article .intro { font-size: 18px; }
+  .article-body { font-size: 17px; line-height: 1.75; }
+  .article-body h2 { overflow-wrap: anywhere; }
+  .article-figure { margin-inline: 0; }
+  .form-bottom { align-items: stretch; }
+  .comment-form button { width: 100%; }
+  .comment { min-width: 0; }
+  .comment-head { gap: 8px; }
+  .comment p { margin-left: 0; }
+  .post-preview { grid-template-columns: minmax(0, 1fr); }
+  .preview-image { width: 100%; height: auto; max-height: 240px; }
+}
