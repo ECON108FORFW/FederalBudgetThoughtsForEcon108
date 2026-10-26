@@ -41,10 +41,10 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "This chart was assembled using data from the U.S. Government's Federal Budget Explorer, which lets people view the budget in sections (with money totals for each!).",
+        "text": "This chart was assembled using data from the US Government’s Federal Budget Explorer, which lets people view the budget in sections, with money totals for each.",
         "links": [
           {
-            "text": "the U.S. Government's Federal Budget Explorer, which lets people view the budget in sections (with money totals for each!).",
+            "text": "This chart was assembled using data from the US Government’s Federal Budget Explorer, which lets people view the budget in sections, with money totals for each.",
             "url": "https://www.usaspending.gov/explorer/budget_function"
           }
         ]
