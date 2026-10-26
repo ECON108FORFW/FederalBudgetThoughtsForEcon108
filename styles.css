@@ -38,3 +38,17 @@ html, body { max-width: 100%; overflow-x: clip; }
   .post-preview { grid-template-columns: minmax(0, 1fr); }
   .preview-image { width: 100%; height: auto; max-height: 240px; }
 }
+
+
+/* Article share dialog */
+.share-row { display: flex; justify-content: flex-end; margin: 4px 0 24px; }
+.share-trigger { min-height: 44px; display: inline-flex; gap: 8px; align-items: center; }
+.share-dialog { border: 1px solid var(--line); border-radius: 10px; padding: 24px; width: min(92vw, 440px); max-width: 440px; background: var(--paper); color: var(--ink); box-shadow: 0 18px 60px #0003; }
+.share-dialog::backdrop { background: #0007; }
+.share-dialog h2 { font: normal 25px Georgia,serif; margin: 0 0 18px; }
+.share-url { width: 100%; min-width: 0; border: 1px solid #c8cec8; border-radius: 5px; padding: 12px; font-size: 16px; color: var(--ink); background: #fff; }
+.share-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 18px; }
+.share-actions button { min-height: 44px; }
+.share-close { background: #e5e9e4; color: var(--ink); }
+.share-status { min-height: 1.4em; margin: 12px 0 0; font-size: 14px; }
+@media (max-width: 600px) { .share-dialog { padding: 18px; } .share-actions { flex-direction: column; } .share-actions button { width: 100%; } }
