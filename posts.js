@@ -20,7 +20,7 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Here are five interesting points that may change how you view welfare spending in the context of the US government system. This analysis draws on FY2026 spending calculations, historical comparisons, and social-policy research."
+        "text": "Here are five interesting points that may change how you view welfare spending in the context of the US government system. This analysis draws on Fiscal Year 2026 (FY2026) spending calculations, historical comparisons, and social-policy research."
       },
       {
         "type": "heading",
