@@ -32,7 +32,7 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Chart 1. Welfare-Related Spending by Category"
+        "text": "Chart: Welfare-Related Spending by Category"
       },
       {
         "type": "image",
@@ -117,7 +117,7 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Chart 4. Comparison of Reported Government Expenditures"
+        "text": "Chart: Comparison of Reported Government Expenditures"
       },
       {
         "type": "image",
