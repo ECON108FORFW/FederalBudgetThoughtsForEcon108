@@ -29,6 +29,32 @@
     document.title = `${post.title} — ECON 108 for FW`;app.replaceChildren();
     const back=elt("a","back-link","← All writing");back.href="#";app.append(back);
     const article=elt("article","article");article.append(elt("div","meta",dateText(post.date)),elt("h1","",post.title),elt("p","intro",post.excerpt));
+    const shareRow=elt("div","share-row");
+    const shareButton=elt("button","share-trigger","↗ Share");
+    shareButton.type="button";
+    shareButton.setAttribute("aria-haspopup","dialog");
+    const shareDialog=elt("dialog","share-dialog");
+    const dialogTitle=elt("h2","","Share this article");
+    const shareLink=elt("input","share-url");shareLink.type="text";shareLink.readOnly=true;
+    shareLink.setAttribute("aria-label","Direct link to article");
+    const copyButton=elt("button","share-copy","Copy link");copyButton.type="button";
+    const closeButton=elt("button","share-close","Close");closeButton.type="button";
+    const shareStatus=elt("p","share-status");shareStatus.setAttribute("role","status");
+    const actions=elt("div","share-actions");actions.append(copyButton,closeButton);
+    shareDialog.append(dialogTitle,shareLink,actions,shareStatus);
+    shareRow.append(shareButton,shareDialog);article.append(shareRow);
+    const directLink=()=>new URL("#post/"+encodeURIComponent(post.slug),location.href.split("#")[0]).href;
+    shareButton.addEventListener("click",()=>{shareLink.value=directLink();shareStatus.textContent="";shareDialog.showModal();});
+    closeButton.addEventListener("click",()=>shareDialog.close());
+    shareDialog.addEventListener("click",event=>{if(event.target===shareDialog)shareDialog.close();});
+    copyButton.addEventListener("click",async()=>{
+      const url=directLink();
+      try {
+        if(navigator.clipboard && window.isSecureContext)await navigator.clipboard.writeText(url);
+        else {shareLink.focus();shareLink.select();if(!document.execCommand("copy"))throw Error("copy failed");}
+        shareStatus.textContent="Link copied!";
+      } catch(err) {shareLink.focus();shareLink.select();shareStatus.textContent="Copy unavailable. Select and copy the link above.";}
+    });
     const body=elt("div","article-body");
     for(const block of post.blocks){
       if(block.type==="paragraph") {const p=elt("p");const links=block.links||[];let cursor=0;for(const link of links){const index=block.text.indexOf(link.text,cursor);if(index<0)continue;p.append(document.createTextNode(block.text.slice(cursor,index)));const a=elt("a","",link.text);a.href=link.url;a.target="_blank";a.rel="noopener noreferrer";p.append(a);cursor=index+link.text.length}p.append(document.createTextNode(block.text.slice(cursor)));body.append(p)}
