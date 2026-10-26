@@ -1,5 +1,4 @@
-// Posts appear newest first.
-// PDFs remain unchanged and are displayed directly in the article.
+// Posts appear newest first. PDFs are displayed without altering their contents.
 window.BLOG_POSTS = [
   {
     slug: "us-welfare-spending-out-of-control",
@@ -7,7 +6,7 @@ window.BLOG_POSTS = [
     date: "2026-10-25",
     excerpt: "Presented by Funina Wu",
     blocks: [
-      { type: "pdf", src: "assets/econ108-week9-rumination-response.pdf" }
+      { type: "pdf", src: "assets/ECON_108_Rumination_Response_Spectral-1.pdf" }
     ]
   }
 ];
