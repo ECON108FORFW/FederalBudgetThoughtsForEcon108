@@ -24,7 +24,7 @@
       list.append(a);
     });app.append(list);
   }
-  function showAbout(){document.title="About — ECON 108 for FW";app.replaceChildren();const s=elt("section","about");s.append(elt("div","eyebrow","About this space"),elt("h1","","About ECON 108 for FW"),elt("p","","A public blog for ECON 108 for FW. Anyone can read posts and leave comments without an account. Comments are identified by randomly assigned animal species."),elt("p","","New posts will appear on the homepage when published."));app.append(s)}
+  function showAbout(){document.title="About — ECON 108 for FW";app.replaceChildren();const s=elt("section","about");s.append(elt("p","","Blog for ECON 108 class project."));app.append(s)}
   function article(post) {
     document.title = `${post.title} — ECON 108 for FW`;app.replaceChildren();
     const back=elt("a","back-link","← All writing");back.href="#";app.append(back);
