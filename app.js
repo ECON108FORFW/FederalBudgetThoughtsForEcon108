@@ -31,7 +31,7 @@
     const article=elt("article","article");article.append(elt("div","meta",dateText(post.date)),elt("h1","",post.title),elt("p","intro",post.excerpt));
     const body=elt("div","article-body");
     for(const block of post.blocks){
-      if(block.type==="paragraph")body.append(elt("p","",block.text));
+      if(block.type==="paragraph") {const p=elt("p");const links=block.links||[];let cursor=0;for(const link of links){const index=block.text.indexOf(link.text,cursor);if(index<0)continue;p.append(document.createTextNode(block.text.slice(cursor,index)));const a=elt("a","",link.text);a.href=link.url;a.target="_blank";a.rel="noopener noreferrer";p.append(a);cursor=index+link.text.length}p.append(document.createTextNode(block.text.slice(cursor)));body.append(p)}
       if(block.type==="heading")body.append(elt("h2","",block.text));
       if(block.type==="pdf-link") {const link=elt("a","back-link","Original PDF");link.href=block.src;link.target="_blank";link.rel="noopener";body.append(link)}
       if(block.type==="image") {const fig=elt("figure","article-figure");const image=elt("img");image.src=block.src;image.alt=block.alt||"";image.loading="lazy";fig.append(image);if(block.caption)fig.append(elt("figcaption","",block.caption));body.append(fig)}
