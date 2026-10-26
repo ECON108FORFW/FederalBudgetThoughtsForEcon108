@@ -27,7 +27,7 @@ for letter in string.ascii_lowercase:
             if re.fullmatch(r"[\w'-]+(?:\s+[\w'-]+)*", word):
                 entries.add(word)
                 page_words += 1
-    if page_words == 0:
+    if page_words == 0 and not re.search(r"list of 0 user submitted", text, re.IGNORECASE):
         raise RuntimeError(f"No dictionary entries found on {url}")
 if len(entries) < 150:
     raise RuntimeError(f"Unexpectedly small NoSwearing dictionary: {len(entries)} entries")
