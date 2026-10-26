@@ -18,13 +18,13 @@
         if (!Array.isArray(words) || !words.length) throw new Error("Empty profanity dictionary");
         const escape = word => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
         const choices = words.sort((a,b) => b.length - a.length).map(word =>
-          escape(word).replace(/\\ /g, "\\s+"));
+          escape(word).replace(/ /g, "\\s+"));
         return new RegExp("(?<![\\p{L}\\p{N}])(?:" + choices.join("|") + ")(?![\\p{L}\\p{N}])", "giu");
       });
     return profanityListPromise;
   };
   const maskProfanity = (body, regex) => String(body).replace(regex,
-    phrase => phrase.replace(/[^\\s]/g, "*"));
+    phrase => phrase.replace(/[^\s]/g, "*"));
 
   function home() {
     document.title = "ECON 108 for FW";
