@@ -12,13 +12,19 @@
 
   let profanityListPromise;
   const profanityList = () => {
-    if (!profanityListPromise) profanityListPromise = fetch("assets/bad-words.txt?v=1")
-      .then(res => { if (!res.ok) throw new Error("Profanity list unavailable"); return res.text(); })
-      .then(text => new Set(text.split(/\\r?\\n/).map(word => word.trim().toLowerCase()).filter(Boolean)));
+    if (!profanityListPromise) profanityListPromise = fetch("assets/noswearing-words.json?v=1")
+      .then(res => { if (!res.ok) throw new Error("Profanity dictionary unavailable"); return res.json(); })
+      .then(words => {
+        if (!Array.isArray(words) || !words.length) throw new Error("Empty profanity dictionary");
+        const escape = word => word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const choices = words.sort((a,b) => b.length - a.length).map(word =>
+          escape(word).replace(/\\ /g, "\\s+"));
+        return new RegExp("(?<![\\p{L}\\p{N}])(?:" + choices.join("|") + ")(?![\\p{L}\\p{N}])", "giu");
+      });
     return profanityListPromise;
   };
-  const maskProfanity = (body, words) => String(body).replace(/[\\p{L}\\p{N}]+(?:['’\\-][\\p{L}\\p{N}]+)*/gu,
-    word => words.has(word.toLowerCase()) ? "*".repeat(word.length) : word);
+  const maskProfanity = (body, regex) => String(body).replace(regex,
+    phrase => phrase.replace(/[^\\s]/g, "*"));
 
   function home() {
     document.title = "ECON 108 for FW";
