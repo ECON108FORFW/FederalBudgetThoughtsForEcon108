@@ -10,11 +10,7 @@ window.BLOG_POSTS = [
         "type": "image",
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYZEa-2MSQkHNrHtSGCLZm_YWhBZkW1FD0NfAhxG608wDkcU98F2bHfXg&s=10",
         "alt": "Remember... CORRELATION IS NOT CAUSATION meme showing a cat perched on the bent roof edge",
-        "caption": "Original meme from the article"
-      },
-      {
-        "type": "paragraph",
-        "text": "“Guys, they’re happening at the same time in the same place! The cat’s gotta be responsible for the roof collapsing!”"
+        "caption": "“Guys, they’re happening at the same time in the same place! The cat’s gotta be responsible for the roof collapsing!”"
       },
       {
         "type": "paragraph",
