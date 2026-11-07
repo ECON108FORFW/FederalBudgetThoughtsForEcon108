@@ -1,6 +1,90 @@
 // Article transcribed from the original PDF. Charts are extracted unchanged at deployment.
 window.BLOG_POSTS = [
   {
+    "slug": "jumping-gaps-correlation-causation",
+    "title": "Jumping Gaps: How To Turn Correlation Into Causation, Apparently",
+    "date": "2026-11-07",
+    "excerpt": "Three examples of why correlation does not establish causation.",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "“Guys, they’re happening at the same time in the same place! The cat’s gotta be responsible for the roof collapsing!”"
+      },
+      {
+        "type": "paragraph",
+        "text": "Turns out a lot of “obvious” conclusions have gaping holes in them if you really turn to question the research and its limits. Here’s a few examples for some musing:"
+      },
+      {
+        "type": "heading",
+        "text": "1. Those in the Top 5 Turned Out Good Careers…So It’s the Best Thing For You Too, Right?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fact: As mentioned in the Reason Magazine interview with Nobel-Prize Winning Economist James Heckman, economists who publish in the top five journals are more likely to get tenure, be celebrated in academics, etc."
+      },
+      {
+        "type": "paragraph",
+        "text": "So all the markers of success, right? And they always say to copy the best, so therefore all economists should reference the top five economic journals as much as possible."
+      },
+      {
+        "type": "paragraph",
+        "text": "But how true is that? In the same podcast, Heckman points out that people are missing out on valuable data by confining themselves to referencing only papers published in the top five economic journals. For example, he met some Chinese economists who studied the Michigan auto industry’s development in the past, instead of the rapidly-growing Chinese auto economy of today. (Timestamp: 46:46) Those researchers live in THE largest auto industry of the modern world, and even know their own home better than some foreign land."
+      },
+      {
+        "type": "paragraph",
+        "text": "Turns out, an easy way to build up good economic rep. is if you keep connecting with the Top 5 Economic Journals. People don’t pay as much attention to you if you aren’t in the network of researchers surrounding the Top 5."
+      },
+      {
+        "type": "paragraph",
+        "text": "What might be sacrificed by the research community giving more recognition to the certain kinds of research that references the top five journals? Are we missing out on local info that researchers in that area would have, compared to the researchers in the top five journals?"
+      },
+      {
+        "type": "heading",
+        "text": "2. Only One Ingredient Matters for Raising Successful Kids, They Say"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fact: Children from more affluent neighborhoods with better conditions do better in preschool."
+      },
+      {
+        "type": "paragraph",
+        "text": "So if it’s the community that shapes the kid, then therefore we should move families to better neighborhoods so that the kids can benefit from the nicer environment. This one factor is all that matters, right…?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Actually, you can’t just ignore the other factors going into kid-raising, like parents' treatment and time with their children. Say you build a house in the perfect idyllic neighborhood - doesn’t mean you can just ignore the supports! As pointed out in the podcast, these children aren’t doing better in preschool necessarily because of their geographic environment, they might be doing better based on how their parents treat them and spend time with them. In the studies of poor Jamaican neighborhoods, researchers found that when parents spent at least an hour of time with their children every week, the kids tended to do better in preschool too (Timestamp: 21:05)."
+      },
+      {
+        "type": "paragraph",
+        "text": "But that’s still just correlation, it’s not enough. We have to ask about the direct effects. How can researchers distinguish the effects of neighborhood conditions from parental involvement in children’s lives? If parental involvement is what matters, then what about the value of the other things the parents could use that same time on instead?"
+      },
+      {
+        "type": "heading",
+        "text": "3. Darn AI Investment, Raising My Interest Rates!"
+      },
+      {
+        "type": "paragraph",
+        "text": "Fact: Real interest rates (inflation-adjusted interest rates) have been growing since AI investment started."
+      },
+      {
+        "type": "paragraph",
+        "text": "It’s no secret that lots of money is needed to drive this data center boom. So of course, the AI investors have been borrowing money like crazy - and the real interest rate has been rising too. Conclusion: All the money borrowing for AI data center investment is driving up the interest rates! It’s more expensive for everyone to get loans now!"
+      },
+      {
+        "type": "paragraph",
+        "text": "But hold on! Current interest rates actually line up with predicted historical average.There are many other possible explanations for rates rising up. “There are many possible explanations: recovery from unusually low rates during the pandemic, Federal borrowing, maybe even a quite different tech story in which greater expectations of future wealth are reducing savings today (like the reputed AI workers who have taken up smoking because they expect a future cure for lung cancer). But note that real rates are up across advanced economies, not just here, even though most of the AI spending is here–this further weakens the case for crowding out of US investment, as the world saving base is much larger than the US base.” (Tabrrok)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Just because the real interest rate is rising at the same time as the borrowing for AI investment massively increased, doesn’t mean one caused the other."
+      },
+      {
+        "type": "paragraph",
+        "text": "In general, distinguishing effects is key here - what’s actually responsible in situations like these?"
+      }
+    ]
+  },
+  {
     "slug": "us-welfare-spending-out-of-control",
     "title": "“US WELFARE SPENDING OUT OF CONTROL”: WHY THAT’S NOT REALLY TRUE AS IT SEEMS",
     "date": "2026-10-25",
