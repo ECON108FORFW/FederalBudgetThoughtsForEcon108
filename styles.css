@@ -59,3 +59,6 @@ html, body { max-width: 100%; overflow-x: clip; }
 .byline-share-row .intro { margin:0; min-width:0; flex:1; }
 .byline-share-row .share-row { margin:0; flex-shrink:0; }
 @media (max-width:600px) { .byline-share-row { gap:12px; } .byline-share-row .share-trigger { padding:11px 14px; } }
+
+/* Keep original PDF meme caption directly beneath the image. */
+.article-figure figcaption { font-style: italic; text-align: center; margin-top: 9px; }
