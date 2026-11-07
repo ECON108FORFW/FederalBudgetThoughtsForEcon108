@@ -8,8 +8,19 @@ window.BLOG_POSTS = [
     "blocks": [
       {
         "type": "image",
-        "src": "assets/jumping-gaps-correlation.jpg",
-        "alt": "Original meme showing a cat on a damaged roof with the caption Remember... Correlation is not causation"
+        "src": "https://i.imgflip.com/8uktr5.jpg",
+        "alt": "Remember... CORRELATION IS NOT CAUSATION meme, showing a cat on the collapsed edge of a roof",
+        "caption": "Original meme included in the PDF"
+      },
+      {
+        "type": "paragraph",
+        "text": "Image source: Imgflip",
+        "links": [
+          {
+            "text": "Imgflip",
+            "url": "https://imgflip.com/i/8uktr5"
+          }
+        ]
       },
       {
         "type": "paragraph",
