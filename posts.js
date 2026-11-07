@@ -8,19 +8,9 @@ window.BLOG_POSTS = [
     "blocks": [
       {
         "type": "image",
-        "src": "https://i.imgflip.com/8uktr5.jpg",
-        "alt": "Remember... CORRELATION IS NOT CAUSATION meme, showing a cat on the collapsed edge of a roof",
-        "caption": "Original meme included in the PDF"
-      },
-      {
-        "type": "paragraph",
-        "text": "Image source: Imgflip",
-        "links": [
-          {
-            "text": "Imgflip",
-            "url": "https://imgflip.com/i/8uktr5"
-          }
-        ]
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYZEa-2MSQkHNrHtSGCLZm_YWhBZkW1FD0NfAhxG608wDkcU98F2bHfXg&s=10",
+        "alt": "Remember... CORRELATION IS NOT CAUSATION meme showing a cat perched on the bent roof edge",
+        "caption": "Original meme from the article"
       },
       {
         "type": "paragraph",
