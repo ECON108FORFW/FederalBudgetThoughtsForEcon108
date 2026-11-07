@@ -7,6 +7,11 @@ window.BLOG_POSTS = [
     "excerpt": "By Funina Wu",
     "blocks": [
       {
+        "type": "image",
+        "src": "assets/jumping-gaps-correlation.jpg",
+        "alt": "Original meme showing a cat on a damaged roof with the caption Remember... Correlation is not causation"
+      },
+      {
         "type": "paragraph",
         "text": "“Guys, they’re happening at the same time in the same place! The cat’s gotta be responsible for the roof collapsing!”"
       },
@@ -20,7 +25,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Fact: As mentioned in the Reason Magazine interview with Nobel-Prize Winning Economist James Heckman, economists who publish in the top five journals are more likely to get tenure, be celebrated in academics, etc."
+        "text": "Fact: As mentioned in the Reason Magazine interview with Nobel-Prize Winning Economist James Heckman, economists who publish in the top five journals are more likely to get tenure, be celebrated in academics, etc.",
+        "links": [
+          {
+            "text": "As mentioned in the Reason Magazine interview with Nobel-Prize Winning Economist James Heckman",
+            "url": "https://reason.com/podcast/2026/10/07/are-economists-measuring-the-wrong-things/"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -28,7 +39,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "But how true is that? In the same podcast, Heckman points out that people are missing out on valuable data by confining themselves to referencing only papers published in the top five economic journals. For example, he met some Chinese economists who studied the Michigan auto industry’s development in the past, instead of the rapidly-growing Chinese auto economy of today. (Timestamp: 46:46) Those researchers live in THE largest auto industry of the modern world, and even know their own home better than some foreign land."
+        "text": "But how true is that? In the same podcast, Heckman points out that people are missing out on valuable data by confining themselves to referencing only papers published in the top five economic journals. For example, he met some Chinese economists who studied the Michigan auto industry’s development in the past, instead of the rapidly-growing Chinese auto economy of today. (Timestamp: 46:46) Those researchers live in THE largest auto industry of the modern world, and even know their own home better than some foreign land.",
+        "links": [
+          {
+            "text": "(Timestamp: 46:46)",
+            "url": "https://reason.com/podcast/2026/10/07/are-economists-measuring-the-wrong-things/"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -52,7 +69,13 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "Actually, you can’t just ignore the other factors going into kid-raising, like parents' treatment and time with their children. Say you build a house in the perfect idyllic neighborhood - doesn’t mean you can just ignore the supports! As pointed out in the podcast, these children aren’t doing better in preschool necessarily because of their geographic environment, they might be doing better based on how their parents treat them and spend time with them. In the studies of poor Jamaican neighborhoods, researchers found that when parents spent at least an hour of time with their children every week, the kids tended to do better in preschool too (Timestamp: 21:05)."
+        "text": "Actually, you can’t just ignore the other factors going into kid-raising, like parents' treatment and time with their children. Say you build a house in the perfect idyllic neighborhood - doesn’t mean you can just ignore the supports! As pointed out in the podcast, these children aren’t doing better in preschool necessarily because of their geographic environment, they might be doing better based on how their parents treat them and spend time with them. In the studies of poor Jamaican neighborhoods, researchers found that when parents spent at least an hour of time with their children every week, the kids tended to do better in preschool too (Timestamp: 21:05).",
+        "links": [
+          {
+            "text": "Timestamp: 21:05",
+            "url": "https://reason.com/podcast/2026/10/07/are-economists-measuring-the-wrong-things/"
+          }
+        ]
       },
       {
         "type": "paragraph",
@@ -72,7 +95,17 @@ window.BLOG_POSTS = [
       },
       {
         "type": "paragraph",
-        "text": "But hold on! Current interest rates actually line up with predicted historical average.There are many other possible explanations for rates rising up. “There are many possible explanations: recovery from unusually low rates during the pandemic, Federal borrowing, maybe even a quite different tech story in which greater expectations of future wealth are reducing savings today (like the reputed AI workers who have taken up smoking because they expect a future cure for lung cancer). But note that real rates are up across advanced economies, not just here, even though most of the AI spending is here–this further weakens the case for crowding out of US investment, as the world saving base is much larger than the US base.” (Tabrrok)"
+        "text": "But hold on! Current interest rates actually line up with predicted historical average.There are many other possible explanations for rates rising up. “There are many possible explanations: recovery from unusually low rates during the pandemic, Federal borrowing, maybe even a quite different tech story in which greater expectations of future wealth are reducing savings today (like the reputed AI workers who have taken up smoking because they expect a future cure for lung cancer). But note that real rates are up across advanced economies, not just here, even though most of the AI spending is here–this further weakens the case for crowding out of US investment, as the world saving base is much larger than the US base.” (Tabarrok in \"No, DataCenters are Not Crowding-Out Other Investments\").",
+        "links": [
+          {
+            "text": "quite different tech story",
+            "url": "https://basilhalperin.com/papers/agi_emh.pdf"
+          },
+          {
+            "text": "(Tabarrok in \"No, DataCenters are Not Crowding-Out Other Investments\").",
+            "url": "https://marginalrevolution.com/marginalrevolution/2026/10/no-datacenters-are-not-crowding-out-other-investments.html"
+          }
+        ]
       },
       {
         "type": "paragraph",
