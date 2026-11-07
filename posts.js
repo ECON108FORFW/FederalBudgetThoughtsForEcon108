@@ -4,7 +4,7 @@ window.BLOG_POSTS = [
     "slug": "jumping-gaps-correlation-causation",
     "title": "Jumping Gaps: How To Turn Correlation Into Causation, Apparently",
     "date": "2026-11-07",
-    "excerpt": "Three examples of why correlation does not establish causation.",
+    "excerpt": "By Funina Wu",
     "blocks": [
       {
         "type": "paragraph",
